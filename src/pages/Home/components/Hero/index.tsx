@@ -52,7 +52,9 @@ export function Hero() {
           </BenefitsContainer>
         </div>
 
-        <img src={heroImage} alt="" />
+        <div className="imageContainer">
+          <img src={heroImage} alt="" />
+        </div>
       </HeroContent>
     </HeroContainer>
   )
