@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const OurCoffeesContainer = styled.section`
   width: 100%;
   margin-top: 2rem;
-  padding: 0 2rem;
 
   @media (max-width: 700px) {
     margin-top: 23rem;

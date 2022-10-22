@@ -10,7 +10,7 @@ export const CompleteOrderContainer = styled.form`
     flex-direction: column;
   }
   padding: 0 2rem;
-  padding-bottom: 2rem;
+  margin-bottom: 2rem;
 `
 
 export const SectionBaseStyle = styled.div`

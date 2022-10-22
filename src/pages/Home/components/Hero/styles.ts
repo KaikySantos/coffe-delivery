@@ -11,7 +11,6 @@ export const HeroContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 2rem;
 `
 
 export const HeroContent = styled.div`
