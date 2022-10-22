@@ -25,6 +25,16 @@ export const CoffeeCartCardContainer = styled.div`
     align-self: flex-start;
     font-weight: 700;
   }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    > p {
+      align-self: flex-end;
+    }
+  }
 `
 
 export const ActionsContainer = styled.div`
@@ -37,6 +47,12 @@ export const ActionsContainer = styled.div`
   > div {
     max-width: 4.5rem;
     height: 100%;
+  }
+
+  @media (max-width: 500px) {
+    > div {
+      max-width: 100%;
+    }
   }
 `
 

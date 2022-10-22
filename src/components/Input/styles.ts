@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components'
 
 export const InputWrapper = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
@@ -40,7 +41,7 @@ export const InputStyleContainer = styled.div<InputContainerProps>`
 `
 
 export const InputStyled = styled.input`
-  flex: 1;
+  width: 100%;
   background: none;
   border: none;
   padding: 0 0.75rem;

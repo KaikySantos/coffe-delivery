@@ -5,7 +5,7 @@ export const CompleteOrderFormContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  width: 40rem;
+  width: 100%;
 `
 
 export const FormSectionContainer = styled(SectionBaseStyle)`
@@ -16,33 +16,52 @@ export const FormSectionContainer = styled(SectionBaseStyle)`
 
 export const AddressFormContainer = styled.div`
   width: 100%;
-  display: grid;
-  grid-template-columns: 12.5rem 17.2rem 3.75rem;
-  column-gap: 0.75rem;
-  row-gap: 1rem;
-  grid-auto-flow: dense;
 
-  .cep {
-    grid-column: span 3;
-    max-width: 12.5rem;
+  .row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    > div {
+      flex: 1;
+    }
+    + .row {
+      margin-top: 1rem;
+    }
+
+    .cep {
+      max-width: 9rem;
+    }
+    .complement {
+      flex: 2;
+    }
+    .city {
+      flex: 1.5;
+    }
+    .uf {
+      flex: 0.4;
+    }
   }
-
-  .street {
-    grid-column: span 3;
-  }
-
-  .complement {
-    grid-column: span 2;
+  @media (max-width: 500px) {
+    .row {
+      flex-direction: column;
+    }
+    .cep {
+      max-width: 100% !important;
+    }
   }
 `
 
 export const PaymentMethodOptionsContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 0.75rem;
 
   > p {
-    grid-column: span 3;
     color: ${({ theme }) => theme.colors['base-error']};
+  }
+
+  @media (max-width: 620px) {
+    flex-direction: column;
+    gap: 0;
   }
 `

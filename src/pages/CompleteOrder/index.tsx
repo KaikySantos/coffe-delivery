@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { CompleteOrderForm } from './components/CompleteOrderForm'
 import { SelectedCoffees } from './components/SelectedCoffees'
 import { CompleteOrderContainer } from './styles'
