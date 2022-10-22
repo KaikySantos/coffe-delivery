@@ -7,7 +7,7 @@ export function Home() {
     <HomeContainer>
       <Hero />
 
-      {/* <OurCoffees /> */}
+      <OurCoffees />
     </HomeContainer>
   )
 }
