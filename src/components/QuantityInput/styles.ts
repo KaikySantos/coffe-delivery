@@ -12,6 +12,7 @@ export const QuantityInputContainer = styled.div<QuantityInputContainerProps>`
   justify-content: space-between;
   gap: 4px;
   border-radius: 6px;
+  height: 2.375rem;
 
   padding: 0.5rem;
 
